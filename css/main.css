@@ -1,0 +1,18 @@
+.main{
+	width:600px;
+	height:300px;
+}
+.marginbottom{
+	margin-bottom:10px;
+}
+table{
+	width:600px !important;
+}
+table tr td{
+	height:40px;
+}
+table tr td input{
+	width:100px;
+	border:0;
+	outline:none;
+}

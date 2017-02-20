@@ -1,0 +1,36 @@
+<div ng-controller="addUsersController">
+	<div>
+		<table class="text-center table table-bordered" border="1">
+			<tr>
+				<td>用户名</td>
+				<td>等级</td>
+				<td>积分</td>
+				<td>地址</td>
+				<td>电话</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" ng-model="user.username">
+				</td>
+				<td>
+					<input type="text" ng-model="user.level">
+				</td>
+				<td>
+					<input type="text" ng-model="user.score">
+				</td>
+				<td>
+					<input type="text" ng-model="user.address">
+				</td>
+				<td>
+					<input type="text" ng-model="user.phone">
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="marginbottom">
+		 <button type="button" id="addData" class="btn btn-default" ng-click="addData()">增加用户</button>
+	</div>
+	<div ui-grid="gridOpts"  id="grid1"  ui-grid-pagination  class="main">
+		
+	</div>
+</div>

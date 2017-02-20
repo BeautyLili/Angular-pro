@@ -1,0 +1,18 @@
+<div class="well">
+	修改用户
+</div> 
+<div class="list-group" ng-controller="modifyuser">
+	<div class="list-group-item">编号：{{ user.id }}</div>
+	<div class="list-group-item">用户名：{{ user.username }}</div>
+	<div class="list-group-item">等级：{{ user.level }}</div>
+	<div class="list-group-item">积分：{{ user.score }}</div>
+	<div class="list-group-item">地址：<input type="text" placeholder='{{ user.address }}' ng-model="user.address"></div>
+	<div class="list-group-item">电话：<input type="text" placeholder='{{ user.phone }}' ng-model="user.phone"></div>
+	<div class="list-group-item">
+		<button class="btn btn-default" ng-click="modify()">修改</button>
+	</div>
+	<div class="list-group-item modify">
+		
+	</div>
+	<div><a href="javascript:history.back()">返回</a></div>
+</div>
