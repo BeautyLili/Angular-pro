@@ -25,7 +25,7 @@ app.controller("loginController",function($scope,$http,$cookies,$state){
 				$state.go("main");
 
 			}else{
-				$scope.error=true;
+			   $scope.error=true;
 			}
 		});
 	}
